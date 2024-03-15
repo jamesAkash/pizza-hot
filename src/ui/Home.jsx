@@ -18,17 +18,6 @@ function Home() {
           Continue ordering, {username}
         </Button>
       )}
-      <div className="relative">
-        <video
-          className="rounded-3xl brightness-[-10%] mt-8"
-          autoPlay
-          loop
-          src="./hero.mp4"
-        ></video>
-        <h1 className="absolute top-1/2  font-serif font-extrabold text-[40px] text-slate-900 bg-slate-50">
-          Have a bite!
-        </h1>
-      </div>
     </div>
   );
 }
