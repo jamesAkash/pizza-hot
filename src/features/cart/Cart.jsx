@@ -3,6 +3,7 @@ import Button from "../../ui/Button";
 import CartItem from "./CartItem";
 import { useDispatch, useSelector } from "react-redux";
 import { clearCart } from "./cartSlice";
+import EmptyCart from "./EmptyCart";
 
 function Cart() {
   const cart = useSelector((store) => store.cart.cart);
@@ -33,7 +34,7 @@ function Cart() {
           </Button>
         </div>
       ) : (
-        <h1 className="text-center mt-8 text-3xl">Your Cart is empty :(</h1>
+        <EmptyCart />
       )}
     </div>
   );
